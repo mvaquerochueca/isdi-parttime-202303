@@ -30,7 +30,7 @@ const police = new Car('🚔')
 
 let result = ''
 
-const intervalId = setInterval(() => {
+const interval = setInterval(() => {
     console.clear()
     time += LAPSE
 
@@ -53,7 +53,7 @@ const intervalId = setInterval(() => {
     }
 
     if (taxi.pos >= 100 && thief.pos >= 100 && police.pos >= 100) {
-        clearInterval(intervalId)
+        clearInterval(interval)
 
         result += taxi.status()
         result += thief.status()

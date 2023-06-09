@@ -16,3 +16,5 @@ switch (op) {
     default:
         console.log('Operación no soportada')
 }
+
+// node --inspect-brk  debugear en navegador
